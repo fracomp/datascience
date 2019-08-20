@@ -27,6 +27,9 @@ in each case.
   * kudos - likes from other Strava users (social network)
   * workout_type - one of  'Race',  'Workout' or  'Ride'
   
-  
-Some of the GoldenCheetah parameters are defined [in thier documentation](https://github.com/GoldenCheetah/GoldenCheetah/wiki/UG_Glossary).  
 
+Some of the GoldenCheetah parameters are defined [in thier documentation](https://github.com/GoldenCheetah/GoldenCheetah/wiki/UG_Glossary).  
+/variable speed to be completed
+/organized a more compact table to analyze
+/maybe distribution of frequency close to graph
+/more comments on graphs
