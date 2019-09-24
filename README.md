@@ -1,6 +1,3 @@
-COMP257/ITEC657 Data Science Portfolio 
-===
-
 PORTFOLIO 1:
 Here are definitions of some of the more important fields in the data. Capitalised fields come from the GoldenCheetah data
 while lowercase_fields come from Strava. There are many cases where fields are duplicated and in this case the values
