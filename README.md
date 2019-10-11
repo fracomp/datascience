@@ -1,32 +1,31 @@
 PORTFOLIO 1:
-Here are definitions of some of the more important fields in the data. Capitalised fields come from the GoldenCheetah data
-while lowercase_fields come from Strava. There are many cases where fields are duplicated and in this case the values
-should be the same, although there is room for variation as the algorithm used to calculate them could be different
-in each case. 
 
-  * Duration - overall duration of the ride, should be same as elapsed_time
-  * Time Moving - time spent moving (not resting or waiting at lights), should be the same as moving_time
-  * Elevation Gain - metres climbed over the ride
-  * Average Speed - over the ride
-  * Average Power - average power in watts as measured by a power meter, relates to how much effort is being put in to the ride,   should be the same as  * average_watts' from Strava
-  * Nonzero Average Power - same as Average Power but excludes times when power is zero from the average
-  * Average Heart Rate - should be the same as average_heartrate
-  * Average Cadence - cadence is the rotations per minute of the pedals
-  * Average Temp - temperature in the environment as measured by the bike computer (should be same as average_temp)
-  * VAM - average ascent speed - speed up hills
-  * Calories (HR) - Calorie expendature as estimated from heart rate data
-  * 1 sec Peak Power - this and other  'Peak Power' measures give the maximum power output in the ride over this time period.  Will be higher for shorter periods. High values in short periods would come from a very 'punchy' ride with sprints for example.
-  * 1 min Peak Hr - a similar measure relating to Heart Rate
+DATA: cheetah.csv and strava_export.csv
+
+OBJECTIVE: The first portfolio is based on a set of data on Steve's cycling history over the last couple of years exported from a couple of different systems. This is an exercise in data manipulation and data exploration using Pandas Data Frames.
+
+DATA DESCRIPTION:
+Here are definitions of some of the more important fields in the data. Capitalised fields come from the GoldenCheetah data
+while lowercase_fields come from Strava.
+  * distance - distance travelled in Km
+  * moving_time: spent moving (not resting or waiting at lights)
+  * Elevation Gain: metres climbed over the ride
+  * Average Speed: average speed over the ride in km/h
+  * average_watts: average power in watts as measured by a power meter, relates to how much effort is being put in to the ride
+  * average_heartrate - average heartrate per ride
   * NP - Normalised Power, a smoothed average power measurement, generally higher than Average Power 
   * TSS - Training Stress Score, a measure of how hard a ride this was
-  * device_watts - True if the power (watts) measures were from a power meter, False if they were estimated
-  * distance - distance travelled in Km
   * kudos - likes from other Strava users (social network)
   * workout_type - one of  'Race',  'Workout' or  'Ride'
   
+CONCLUSION:
+Some of the most interesting findings in the dataset were:
+  * The combined dataset (cheetah.csv and strava_export.csv) contains 243 rows and 372 columns
+  * After removing the outliers, the distribution of 'Average_speed' looks normally distributed and this is also conformed by the     normality test
+  * Distance and TSS are strongly related as well as Elevation gain with Distance and moving time with TSS
+  * The median speed of the cyclist is much higher when there is a race involved.
+  * The 'Ride' sessions are those where the cyclist does not use much power and therefore the average heartrate remains small. On     the other hand, the 'Race' rides are those that demands much more power and this leads an increase of the heartrate.
+  * Workout type and distance seem to be the main factors to consider in order to get more kudos.
+  * November 2019 was the month where the cyclist rode the most with almost 700 kilometers travelled.
 
-Some of the GoldenCheetah parameters are defined [in thier documentation](https://github.com/GoldenCheetah/GoldenCheetah/wiki/UG_Glossary).  
-/variable speed to be completed
-/organized a more compact table to analyze
-/maybe distribution of frequency close to graph
-/more comments on graphs
+
