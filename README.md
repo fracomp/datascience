@@ -86,12 +86,17 @@ Some of the most interesting findings in the dataset were:
   * The optimal number of features is 24 (24/30) when RFE is applied. A linear regression with the most important 24 predictors       produces almost 15% accuracy.
   * The relationship between the variables and the energy consumption of appliances is not well represented by the linear model       since the residuals are not normally distributed.
    
-   
 
+PORTFOLIO 3:
 
+DATA: Generated random data points
 
+OBJECTIVE: This notebook illustrates the process of K-means clustering by generating some random clusters of data and then showing the iterations of the algorithm as random cluster means are updated.
 
+CONCLUSION:
+Some of the most interesting findings in the dataset were:
 
+  * The number of iteration needed to complete the k-means was 7
 
 
 
